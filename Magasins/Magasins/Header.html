@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Ceci est mon titre</title>
+
+
+    <!--Ceci va rechercher les script pour ma barre de navigation -->
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!--Tout ce qui est dans la balise style sert a rendre le site plus beau-->
+    <style>
+
+        .navbar-default {
+            background-color: black; /*Fais en sorte que le fond de ma barre de navigation soit noir */
+         
+        }
+        
+
+        table {
+            border-collapse: collapse; /*Fusionne les bordures du tableau */
+            width: 100%; /*Defini la largeur de mon tableau */
+            max-width: 700px; /*Largeur max 700px*/
+            min-width: 400px; /*Largeur min 400px*/
+            text-align: center; /*Centre le texte*/
+        }
+
+        th {
+            background-color: forestgreen; /*Fait en sorte que le fond de mon tableau haut soit vert*/
+            color: white; /*L'ecriture de mon tableau haut est en blanc*/
+            text-align: center; /*Centre le texte*/
+        }
+
+        table, th, td {
+            border: 1px solid black; /*Les bordures du tableau sont en noir et font 1pixel*/
+        }
+
+        th, td {
+            height: 24px; /*Defini la hauteur du tableau */
+            padding: 4px; /*Les ecarts sur le coté font 4px*/
+            vertical-align: middle; /*L'alignement vertial est au milieu*/
+        }
+
+        td {
+            background-color: #8fbc8f; /*La couleur du fond du tableau bas est une couleur personnalisé*/
+            color: black; /*La couleur du texte du tableau bas est noir */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-default">   <!--Defini une classe pour la barre de navigation-->
+        <div>
+
+            <a class="navbar-brand" href="../Default.php">Magasin</a>   <!--Cliquer sur le magasins de la barre de navigation nous ramenera sur la page d'accueil-->
+
+            <ul class="nav navbar-nav">
+                <li><a href="../Consulter.php">Consulter</a></li>     <!--Cliquer sur consulter nous amenera sur la page pour consulter notre bdd-->
+                <li><a href="../Ajouter.php">Ajout</a></li>           <!-- Cliquer sur ajoiter nous amenera sur la page pour ajoiter du contenu a la bdd-->
+            </ul>
+        </div>
+    </nav>
+
+
+</body>
+</html>
